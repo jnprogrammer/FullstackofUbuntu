@@ -1,6 +1,6 @@
 require('./sayHi.js');
 
-var question = require('./talk/question');
+var question = require('./Talk/question');
 var goodbye = require("./Talk/goodBye");
 var talk = require('./Talk');
 
