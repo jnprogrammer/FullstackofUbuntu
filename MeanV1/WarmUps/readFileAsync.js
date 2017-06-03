@@ -7,4 +7,4 @@ console.log("Going to get a file");
 fs.readFile('readFileSync.js',onFileLoad);
 
 
-console.log("App continuddnndess...");
+console.log("App continuddnndgitess...");
