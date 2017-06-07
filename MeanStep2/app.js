@@ -1,3 +1,5 @@
+require('./api/data/dbconnection.js').open();
+
 var express = require('express');
 var app = express();
 var path = require('path');
@@ -19,7 +21,7 @@ app.use('/api',routes);
 
 var server = app.listen(app.get('port'),function(){
     var port = server.address().port;
-    console.log("Where things are happening " + port);
+    console.log("Where Mongo things are happening " + port);
 });
 
 

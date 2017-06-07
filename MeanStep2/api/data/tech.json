@@ -1,0 +1,25 @@
+[{
+	"_id": {
+		"$oid": "5937d9d69510fb7a937912a7"
+	},
+	"name": "AngularJS",
+	"role": "Database",
+	"lang": "JavaScript"
+},
+{
+	"_id": {
+		"$oid": "5937f0bd81ed2a680d3504f1"
+	},
+	"name": "Node",
+	"role": "Platform",
+	"lang": "JavaScript"
+},
+{
+	"_id": {
+		"$oid": "5938054766a4e5df76a500d8"
+	},
+	"name": "Express",
+	"role": "Framework",
+	"lang": "C#"
+}]
+
