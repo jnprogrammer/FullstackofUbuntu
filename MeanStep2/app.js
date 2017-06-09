@@ -21,7 +21,7 @@ app.use('/api',routes);
 
 var server = app.listen(app.get('port'),function(){
     var port = server.address().port;
-    console.log("Where Mongo things are happening " + port);
+    console.log("Port " + port + " where Mongo things are happening ");
 });
 
 
