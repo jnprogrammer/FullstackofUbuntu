@@ -24,31 +24,17 @@ Hotel
         res
             .json(hotels);
     });
-//  collection
-//     .find()
-    // .skip(offset)
-    // .limit(count)
-//     .toArray(function(err,docs){
-//         console.log("Found hotels",docs);
-//         res 
-//             .status(200)
-//             .json(docs);
-//     });
 };
 
 module.exports.hotelsGetOne = function(req,res){
- //get data base
- var db = dbcon.get();
- var collection = db.collection('hotels');
-
+ 
  var hotelId = req.params.hotelId;
 
  console.log("GET one hotel's ID",hotelId);
 
- collection 
-    .findOne({
-        _id : ObjectId(hotelId)
-    },function(err,doc){
+ Hotel 
+    .findById(hotelId)
+    .exec(function(err,doc){
     res
         .status(200)
         .json(doc);
