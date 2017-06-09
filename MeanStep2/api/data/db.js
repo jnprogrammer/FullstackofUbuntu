@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
 var dburl = 'mongodb://localhost:27017/meanhotel';
+mongoose.Promise = global.Promise;
 
 mongoose.connect(dburl);
 
@@ -35,3 +36,7 @@ process.once('SIGUSR2',function(){
         process.kill(process.pid,'SIGUSR2');
     });
 });
+
+//bring in schemas and models s
+
+require('./hotels.model.js');
